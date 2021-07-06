@@ -120,15 +120,26 @@ section.cardapio .title-wrapper h2 {
     font-weight: bold;
     margin-bottom: 30px;
 }
-section.cardapio .cards .card-item {
-    width: calc(24% - 15px);
-    height: 100%;
-    min-height: 420px;
-}
-section.cardapio .cards .card-item .product-image {
-    height: 150px;
+section.cardapio .lista {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
+section.cardapio .lista .item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 300px;
+}
+section.cardapio .lista .esquerda {
+    display: flex;
+    flex-direction: row;
+    width: calc(50% - 15px);
+    border-top-right-radius: 300%;
+    background-color: #484848;
+}
+section.cardapio .lista .direita {
+    display: flex;
+    flex-direction: row;
+    width: calc(50% - 15px);
+} 
